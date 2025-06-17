@@ -5,15 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /* font 지정 */
+        @font-face {
+         font-family: abster;
+            src: url(font/abster-webfont.woff) format('woff');
+        }        
+
         table {
             border-collapse: collapse;
             width: 80%;
+            font-family:abster;
         }
 
-        th, td {
+        th {
+            padding: 8px;
+            text-align: center;
+            border-bottom: 5px solid #ad20c0;
+        }
+        td {
             padding: 8px;
             text-align: left;
             border-bottom: 1px solid #DDD;
+        }
+
+        .add_box{
+            font-family:abster; 
         }
 
         tr:hover {background-color: #D6EEEE;}
@@ -130,21 +146,14 @@
     <br>
 
     <footer style="background: #636262; height: 120px; text-align: center; padding:20px 0">
-	    <div>
-		    <div class="row">
-			    <div class="col-12">
-				    <div class="logo">
-					    <p><img src="./img/logo02.png" alt="logo"> </p>
-				    </div>
-				    <div class="add_box">
-					    <span>(주)비케이에스엔피 서울시 영등포구 선유로 146 이앤씨드림타워 611호</span>
-					    <br/>
-					    <span>전화 02-2628-5695</span>
-					    <span>FAX 02-2628-5696</span>
-				    </div>
-			    </div>
-		    </div>
-	    </div>
+	   
+		<div class="add_box">
+			<p><img src="./img/logo02.png" alt="logo"> </p>
+			 <span>(주)비케이에스엔피 서울시 영등포구 선유로 146 이앤씨드림타워 611호</span>
+			<br>
+			<span>전화 02-2628-5695</span>
+			<span>FAX 02-2628-5696</span>
+		</div>
     </footer>
 
 </body>
